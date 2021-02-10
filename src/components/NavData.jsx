@@ -18,8 +18,8 @@ export const NavData = [
   {
     title: 'Dashboards',
     icon: <DashboardIcon />,
-    iconClose: <ArrowDropUpIcon />,
-    iconOpen: <ArrowDropDownIcon />,
+    iconClosed: <ArrowDropDownIcon />,
+    iconOpened: <ArrowDropUpIcon />,
     subNav: [
       {
         title: 'Chat',
@@ -50,8 +50,8 @@ export const NavData = [
   {
     title: 'Configurações',
     icon: <SettingsIcon />,
-    iconClose: <ArrowDropUpIcon />,
-    iconOpen: <ArrowDropDownIcon />,
+    iconClosed: <ArrowDropDownIcon />,
+    iconOpened: <ArrowDropUpIcon />,
     subNav: [
       {
         title: 'Grupos de Disposições',
