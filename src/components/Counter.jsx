@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/counter.scss';
 
 function Counter({ item }) {

@@ -15,6 +15,9 @@ const Sidebar = () => {
       {NavData.map((item, index) => {
         return <SubMenu item={item} key={index} />;
       })}
+      {/* <figure>
+        <img src='../../comunikme.jpeg' alt='Comunikme logo' />
+      </figure> */}
     </nav>
   );
 };

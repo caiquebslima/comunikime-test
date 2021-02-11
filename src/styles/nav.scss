@@ -3,6 +3,7 @@ nav {
   height: calc(100vh - 70px);
   background: #007fd0;
   transition: all 350ms;
+  position: relative;
   .nav-item {
     position: relative;
     width: 100%;
@@ -13,6 +14,10 @@ nav {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+    li {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
     .nav-icon {
       margin-right: 10px;
     }
@@ -37,4 +42,15 @@ nav {
       background: #014670;
     }
   }
+  // figure {
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0;
+  //   background: #fff;
+  //   height: 70px;
+  //   img {
+  //     width: 100%;
+  //     transform: scale(0.6);
+  //   }
+  // }
 }

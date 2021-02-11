@@ -1,8 +1,37 @@
 .dashboard {
   width: 100%;
+  h2 {
+    margin: 0.3rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
   .counters {
+    margin: 0 1.5rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+  }
+  .charts {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem 1rem;
+    .chart {
+      position: relative;
+      width: 33%;
+      height: 100%;
+      padding: 20px;
+      color: #fff;
+
+      .chart-icon {
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0.3rem 1rem;
+      }
+    }
   }
 }
