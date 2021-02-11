@@ -1,11 +1,10 @@
 nav {
-  display: block;
   flex-shrink: 0;
   width: 220px;
   height: 100%;
   background: #007fd0;
   transition: all 500ms ease-in-out;
-  position: relative;
+  position: absolute;
   .nav-item {
     position: relative;
     width: 100%;
@@ -44,17 +43,18 @@ nav {
       background: #014670;
     }
   }
-  span.nav-toggle {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    svg {
-      transform: scale(1.2);
-    }
+}
+span.nav-toggle {
+  position: absolute;
+  z-index: 999;
+  bottom: 10px;
+  right: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  svg {
+    transform: scale(1.2);
   }
 }

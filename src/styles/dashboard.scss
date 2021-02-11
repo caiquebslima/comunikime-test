@@ -1,5 +1,6 @@
 .dashboard {
   width: 100%;
+  transition: margin-left 500ms ease-in-out;
   h2 {
     margin: 0.3rem 2rem;
     font-size: 1.8rem;

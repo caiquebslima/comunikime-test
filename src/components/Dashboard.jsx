@@ -5,9 +5,12 @@ import '../styles/dashboard.scss';
 import { ChartData } from '../data/ChartData';
 import Chart from './Chart';
 
-function Dashboard() {
+function Dashboard({ isSidebarOpen }) {
   return (
-    <section className='dashboard'>
+    <section
+      className='dashboard'
+      style={isSidebarOpen ? { marginLeft: '0' } : { marginLeft: '220px' }}
+    >
       <h2>Gráficos por Mídia</h2>
       <article className='counters'>
         {CounterData.map((item, index) => {
