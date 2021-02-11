@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavData } from './NavData';
+import { NavData } from '../data/NavData';
 import SubMenu from './SubMenu';
 import '../styles/nav.scss';
 
