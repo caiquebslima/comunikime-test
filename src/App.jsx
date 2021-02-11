@@ -11,7 +11,6 @@ function App() {
   const [sidebarStatus, setSidebarStatus] = React.useState(false);
 
   const showSidebar = () => {
-    console.log(sidebarStatus);
     setSidebarStatus(!sidebarStatus);
   };
   return (
