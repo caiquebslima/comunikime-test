@@ -1,6 +1,7 @@
 import './styles/app.scss';
 import React from 'react';
 import Header from './components/Header';
+import Nav from './components/Nav';
 import Dashboard from './components/Dashboard';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
