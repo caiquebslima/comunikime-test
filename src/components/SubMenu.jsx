@@ -7,26 +7,25 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <div onClick={item.subNav && showSubnav}>
-        <ul>
-          {item.icon}
-          <li>{item.title}</li>
-        </ul>
+      <div className='nav-item main-nav' onClick={item.subNav && showSubnav}>
+        <span className='nav-icon'>{item.icon}</span>
+        <li>{item.title}</li>
+
         <div>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
+          {item.subNav && subnav ? (
+            <span className='action-icon'>{item.iconOpened}</span>
+          ) : item.subNav ? (
+            <span className='action-icon'>{item.iconClosed}</span>
+          ) : null}
         </div>
       </div>
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <ul key={index}>
-              {item.icon}
+            <div className='nav-item sub-nav' key={index}>
+              <span className='nav-icon'>{item.icon}</span>
               <li>{item.title}</li>
-            </ul>
+            </div>
           );
         })}
     </>

@@ -1,12 +1,16 @@
 import React from 'react';
 import '../styles/header.scss';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 function Header() {
   return (
     <header>
-      <h2>Omni</h2>
+      <h2>OMN!A</h2>
       <aside>
-        <button>Sair</button>
+        <span className='logout-icon'>
+          <ExitToAppIcon />
+        </span>
+        Sair
       </aside>
     </header>
   );
