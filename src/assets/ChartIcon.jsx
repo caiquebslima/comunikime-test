@@ -1,10 +1,10 @@
 function ChartIcon() {
   return (
-    <svg viewBox='0 0 100 100' class='chart-icon'>
+    <svg viewBox='0 0 100 100' className='chart-icon'>
       <polyline
         fill='none'
         stroke='#fff'
-        stroke-width='2'
+        strokeWidth='2'
         points='00,120
        20,60
        40,80
