@@ -1,13 +1,19 @@
-function Counter() {
+import React from 'react';
+import '../styles/counter.scss';
+
+function Counter({ item }) {
   return (
-    <article>
-      <figure>
-        <img src='' alt='' />
+    <div className='counter'>
+      <figure
+        style={{ background: `${item.background}`, color: `${item.color}` }}
+      >
+        {item.icon}
       </figure>
-      <div>
-        <p>0</p> <p>Contatos</p>{' '}
+      <div className='counter__info'>
+        <p className='number'>{item.counter}</p>{' '}
+        <p className='legend'>Contatos</p>{' '}
       </div>
-    </article>
+    </div>
   );
 }
 

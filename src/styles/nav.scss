@@ -1,18 +1,24 @@
 nav {
+  flex-shrink: 0;
   width: 220px;
-  height: calc(100vh - 70px);
+  height: 100%;
   background: #007fd0;
-  transition: all 350ms;
+  transition: all 500ms ease-in-out;
+  position: absolute;
   .nav-item {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+    li {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
     .nav-icon {
       margin-right: 10px;
     }
@@ -36,5 +42,19 @@ nav {
     &:hover {
       background: #014670;
     }
+  }
+}
+span.nav-toggle {
+  position: absolute;
+  z-index: 999;
+  bottom: 10px;
+  right: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  svg {
+    transform: scale(1.2);
   }
 }
