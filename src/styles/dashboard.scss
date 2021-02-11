@@ -11,22 +11,43 @@
     display: flex;
   }
   .charts {
-    display: flex;
     width: 100%;
     height: 100%;
-    margin: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 16%);
+    grid-template-rows: repeat(2, 30%);
+    grid-gap: 1rem;
+    margin: 0.5rem 2rem;
     .chart {
+      border-radius: 6px;
       position: relative;
-      width: 33%;
-      height: 100%;
+      grid-column: 4 / 6;
+      grid-row: 1 / 2;
       padding: 20px;
       color: #fff;
-
+      svg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+      }
+      &:first-child {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+      }
+      &:last-child {
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+      }
       .chart-icon {
         width: 100%;
         height: 100%;
       }
       span {
+        font-size: 1.2rem;
         position: absolute;
         top: 0;
         left: 0;

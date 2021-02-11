@@ -1,6 +1,6 @@
 function ChartIcon() {
   return (
-    <svg viewBox='0 0  100' class='chart-icon'>
+    <svg viewBox='0 0 100 100' class='chart-icon'>
       <polyline
         fill='none'
         stroke='#fff'
